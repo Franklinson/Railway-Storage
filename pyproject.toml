@@ -28,5 +28,5 @@ test = ["pytest", "pytest-django"]
 DJANGO_SETTINGS_MODULE = "tests.settings"
 
 [project.urls]
-Homepage = "https://github.com/your-username/django-railway-storage"
-Issues = "https://github.com/your-username/django-railway-storage/issues"
+Homepage = "https://github.com/Franklinson/Railway-Storage"
+Issues = "https://github.com/Franklinson/Railway-Storage/issues"
