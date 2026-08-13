@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "django-railway-storage"
-version = "1.0.0"
+version = "1.0.2"
 description = "Django storage backends and auto-configuration for Railway bucket storage."
 readme = "README.md"
 requires-python = ">=3.8"
