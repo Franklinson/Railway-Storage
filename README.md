@@ -17,6 +17,25 @@ INSTALLED_APPS = [
 ]
 ```
 
+## Setting up a Railway Bucket
+
+1. On the Railway canvas, right-click an empty area and select **Add Service**
+2. Select **Bucket** from the list
+3. Click **Deploy** to provision the bucket
+4. Navigate to the **Credentials** tab of the bucket
+5. Click **Add to Service**
+6. Select the service (your Django app) you want to connect the bucket to
+7. Under **Style**, select either:
+   - **AWS SDK (Generic)** — for general S3-compatible access
+   - **Django (django-storages)** — injects variables matching `django-storages` naming
+8. The injected environment variables will match what this package expects:
+   - `AWS_ACCESS_KEY_ID`
+   - `AWS_SECRET_ACCESS_KEY`
+   - `AWS_STORAGE_BUCKET_NAME`
+   - `AWS_S3_ENDPOINT_URL`
+   - `AWS_S3_REGION_NAME`
+9. Click **Add Service** to save — the variables are now available in your Railway deployment
+
 ## Usage
 
 ### Auto-configure settings
