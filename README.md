@@ -58,15 +58,15 @@ python manage.py configure_railway_storage --storage private --expire 7200
 
 ### Required environment variables
 
-Set these in your Railway project (or `.env`):
+Railway injects these automatically when you connect a bucket to your service. Both naming styles are supported:
 
-| Variable | Description |
-|---|---|
-| `AWS_ACCESS_KEY_ID` | Railway bucket access key |
-| `AWS_SECRET_ACCESS_KEY` | Railway bucket secret key |
-| `AWS_STORAGE_BUCKET_NAME` | Bucket name |
-| `AWS_S3_ENDPOINT_URL` | Railway S3-compatible endpoint URL |
-| `AWS_S3_REGION_NAME` | Region (default: `us-east-1`) |
+| Railway Variable | Alternative | Description |
+|---|---|---|
+| `AWS_ACCESS_KEY_ID` | — | Railway bucket access key |
+| `AWS_SECRET_ACCESS_KEY` | — | Railway bucket secret key |
+| `AWS_S3_BUCKET_NAME` | `AWS_STORAGE_BUCKET_NAME` | Bucket name |
+| `AWS_ENDPOINT_URL` | `AWS_S3_ENDPOINT_URL` | Railway S3-compatible endpoint URL |
+| `AWS_DEFAULT_REGION` | `AWS_S3_REGION_NAME` | Region (default: `us-east-1`) |
 
 ### Use backends directly
 
