@@ -25,6 +25,7 @@ AWS_QUERYSTRING_AUTH = {querystring_auth}
 AWS_QUERYSTRING_EXPIRE = {querystring_expire}
 AWS_S3_FILE_OVERWRITE = False
 AWS_S3_SIGNATURE_VERSION = 's3v4'
+AWS_S3_ADDRESSING_STYLE = 'path'
 MEDIA_URL = f'{{AWS_S3_ENDPOINT_URL}}/{{AWS_STORAGE_BUCKET_NAME}}/'
 AWS_S3_OBJECT_PARAMETERS = {{'CacheControl': 'max-age=86400'}}
 # --- end django-railway-storage ---
